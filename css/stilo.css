@@ -1,0 +1,156 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h6 {
+    font-size: 10pt;
+}
+
+.top-menu {
+    background-color: #fff;
+    text-align: left;
+    color: #007A8D;
+
+}
+
+.card-bolsa{
+    text-align: center;
+    padding-top: 70px;
+    color: #18ACC4;
+}
+
+.contato{
+    background-color: #007A8D;
+    padding: 25px;
+    text-align: left;
+    height: 100px;
+    color: #fff;
+}
+.rodape{
+    background-color: #18ACC4;
+    font-size: 10pt;
+    height: 90px;
+    color: #fff;
+    padding: 25px;
+}
+
+img{
+    max-width:150px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+
+.top-menu > ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.top-menu > ul > li > label {
+   text-align: right;
+}
+
+.nav-menu {
+    background-color: #18ACC4;
+    text-align: left;
+
+}
+
+.nav-menu ul > li > a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #fff;
+
+}
+
+.nav-menu ul > li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.nav-submenu {
+    background-color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+
+}
+
+.nav-submenu ul > li > a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: #000;
+    font-size: 10pt;
+
+}
+
+.nav-submenu ul > li {
+    display: inline-block;
+    padding: 2px;
+
+}
+
+.menu {
+    background-color: #fff;
+    text-align: right;
+    width: 40%;
+    float: right;
+    margin-right: 80px;
+
+}
+
+.menu ul > li > a {
+    text-decoration: none;
+    color: #007A8D;
+    text-align: center;
+
+}
+
+.menu ul > li {
+    display: inline-block;
+    border: 2px solid #007A8D;
+
+}
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.356);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    overflow: scroll;
+    
+
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+form{
+    background: #fff;
+    width: 70%;
+    height: auto;
+    margin: 200px;
+    padding: 10;
+    position: absolute;
+
+}
+@keyframes form{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60, 0);
+    }
+    to{
+        opacity: 1 ;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.mostrar form{
+    animation: form .3s;
+}
+

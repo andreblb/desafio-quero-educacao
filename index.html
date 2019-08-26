@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="top-menu">
+            <ul>
+                <i class="fas fa-info-circle fa-2x"></i>
+                <li>Como Funciona | </li>
+                <li>0800 123 222</li>
+                <li>Logo</li>
+                <li><label>Nome Sobrenome</label></li>
+            </ul>
+            
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Minha contas</a></li>
+                <li><a href="">Bolsas favoritas</a></li>
+            </ul>
+        </div>
+        <div class="nav-submenu">
+            <ul>
+                <li><a href="">Home /</a></li>
+                <li><a href="">Minha contas /</a></li>
+                <li><a href="">Bolsas favoritas</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header>
+
+        <div>
+            <h2>Bolsas favoritas</h2>
+        </div>
+        <div>
+            <h6>Adcione os curso e faculdades do seu interesse e receba atualizações com as melhores ofertas.</h6>
+        </div>
+
+    </header>
+    <section>
+        <div class="menu">
+            <ul>
+                <li><a href="">Todos os semestres</a></li>
+                <li><a href="">2° Semestre de 2019</a></li>
+                <li><a href="">1º Semestre de 2020</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="add-bolsa">
+        <div>
+            <div class="card" style="width: 14rem; height: 20rem; margin-left: 50px;">
+                 <div class="card-body"> 
+                    <div class="card-bolsa">    
+                    <i class="fa fa-plus-circle fa-5x"></i>
+                    </div>
+                    <br />
+                    <h4>Adicionar bolsa</h4>
+                    <h6>Clique para adicionar bolsas de cursos do seu interesse</h6>
+                    
+                 </div>
+            </div>
+        </div>
+    </section>
+    <br />
+
+    <section class="contato">
+        <div class="row justify-content-md-center">
+            <div class="form-group col-md-3">
+                <i class="fab fa-whatsapp fa-2x"></i>
+                <label>0800 123 222</label>
+                <div>Seg-Sex 08h-22h</div>
+            </div>
+            <div class="form-group col-md-3">
+                <i class="far fa-comments fa-2x"></i>
+                <label for=>Chat ao vivo</label><br />
+                <label>Seg-Sex 08h-22h</label>
+                
+            </div>
+            <div class="form-group col-md-3">
+                <i class="far fa-envelope fa-2x"></i>
+                <e-mai>Mande um E-mail</e-mai>
+                <label>Responderemos rapidinho</label>
+            </div>
+            <div class="form-group col-md-3">
+                <i class="fas fa-info-circle fa-2x"></i>
+                <label>Central de ajuda</label>
+                <label>Encontre todas as respostas</label>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-promocao" class="modal-container">
+            <form>
+                <div id="mensagem">
+                    
+                </div>
+            </form>
+    </div>
+
+    <footer class="rodape">
+        <div class="text-center">
+            Feito com <i class="far fa-heart"></i> Quero Educação
+        </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="js/bolsa2.js"></script>
+    <script>
+        function iniciaModal(modalID){
+            const modal = document.getElementById(modalID);
+            modal.classList.add('mostrar');
+            modal.addEventListener('click', (e) =>{
+                if(e.target.id == modalID || e.target.className == 'btn btn-outline-primary'){
+                    modal.classList.remove('mostrar')
+                }
+            })
+        }
+
+        const adcionar = document.querySelector('.add-bolsa');
+        adcionar.addEventListener('click', () =>
+        iniciaModal('modal-promocao'));
+    </script>
+</body></html>
